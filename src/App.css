@@ -1,0 +1,50 @@
+/** @format */
+
+.App {
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.App__Nav {
+  padding: 0.33em 0;
+  margin-bottom: 1em;
+  font-size: 1.1em;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  border-bottom: 1px solid #ccc;
+}
+
+.App__Footer-Nav {
+  padding: 0.33em 0;
+  margin-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 1px solid #ccc;
+}
+
+.App__Nav a,
+.App__Footer-Nav a {
+  flex: auto;
+  margin: 0 0.2em;
+}
+
+.Welcome {
+  text-align: left;
+}
+.Welcome header {
+  text-align: center;
+}
+
+.Welcome code {
+  background-color: #eee;
+  padding: .3em .6em;
+  border-radius: .2em;
+}
+
+.Welcome code::before {
+  content: '$\00a0';
+}
