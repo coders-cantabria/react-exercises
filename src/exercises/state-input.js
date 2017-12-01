@@ -20,22 +20,8 @@ export class StateInput extends React.Component {
   Recuerda que el \`onChange\` recibe un evento…
   `;
 
-  state = { formInput: '' };
-
-  handleChange = ({ target: { value: formInput } }) =>
-    this.setState({ formInput });
-
   render() {
-    return (
-      <div>
-        <input
-          type="text"
-          value={this.state.formInput}
-          onChange={this.handleChange}
-        />
-        <div id="inputValue">{this.state.formInput}</div>
-      </div>
-    );
+    return null;
   }
 }
 

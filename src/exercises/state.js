@@ -21,29 +21,10 @@ export class State extends React.Component {
 
   `;
 
-  state = { clicks: 0 };
+  state = {};
 
   render() {
-    return (
-      <section>
-        <header>
-          <h1>State</h1>
-          <div>
-            <code id="clicks">{this.state.clicks}</code>
-          </div>
-          <div>
-            <button
-              type="button"
-              onClick={() =>
-                this.setState(({ clicks }) => ({ clicks: clicks + 1 }))
-              }
-            >
-              Click!
-            </button>
-          </div>
-        </header>
-      </section>
-    );
+    return null;
   }
 }
 

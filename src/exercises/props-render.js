@@ -11,7 +11,7 @@ export class PropsRender extends React.Component {
   `;
 
   render() {
-    return <p>{this.props.subTitle}</p>;
+    return null;
   }
 }
 

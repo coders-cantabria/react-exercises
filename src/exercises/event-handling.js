@@ -10,14 +10,10 @@ export class EventHandling extends React.Component {
   __Pista__: \`button\` accepta una prop \`onClick\`…
   `;
 
-  handler = () => console.log('click');
+  // handler = ???
 
   render() {
-    return (
-      <button type="button" onClick={this.handler}>
-        click me
-      </button>
-    );
+    return null;
   }
 }
 

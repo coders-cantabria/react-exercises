@@ -18,11 +18,7 @@ export class HandlerPassing extends React.Component {
   static defaultProps = { handler: () => {} };
 
   render() {
-    return (
-      <button type="button" onClick={this.props.handler}>
-        Click to call the handler!
-      </button>
-    );
+    return null;
   }
 }
 
