@@ -18,7 +18,7 @@ export class HandlerPassing extends React.Component {
   static defaultProps = { handler: () => {} };
 
   render() {
-    return null;
+    return <button onClick={this.props.handler}>Jaled</button>;
   }
 }
 
