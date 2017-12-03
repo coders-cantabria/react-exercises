@@ -42,7 +42,18 @@ export class MapRender extends React.Component {
   static defaultProps = { languages: [] };
 
   render() {
-    return <table />;
+    return (<table>
+       {this.props.languages.map((row) =>{
+         return (
+          <tr>
+          <td>{row.name}</td>
+          <td>{row.type}</td>
+        </tr>
+         )
+       })
+      }
+      
+    </table>);
   }
 }
 

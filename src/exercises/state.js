@@ -22,12 +22,6 @@ export class State extends React.Component {
   `;
 
   state = {clicks : 0};
-  
-  constructor(props){
-    super(props);
-
-   
-  }
 
   render() {
     return <button onClick={this.incrementa}>Boton pulsado {this.state.clicks}</button>;
