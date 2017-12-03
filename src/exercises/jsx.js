@@ -13,7 +13,11 @@ export class Jsx extends React.Component {
   `;
 
   render() {
-    return null;
+    return (<div>
+    	<h1>Hola, algo</h1>
+    	<p>juas juas</p>
+
+    	</div>);
   }
 }
 

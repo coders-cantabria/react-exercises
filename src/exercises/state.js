@@ -21,11 +21,15 @@ export class State extends React.Component {
 
   `;
 
-  state = {};
+  state = {clicks : 0};
 
   render() {
-    return null;
+    return <button onClick={this.incrementa}>Boton pulsado {this.state.clicks}</button>;
+  }
+  incrementa = () => {
+    this.setState({clicks: this.state.clicks+1});
   }
 }
 
 export default withInstructions(State);
+

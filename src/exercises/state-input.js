@@ -19,9 +19,18 @@ export class StateInput extends React.Component {
 
   Recuerda que el \`onChange\` recibe un evento…
   `;
-
+  state = {
+    value: ''
+  }
   render() {
-    return null;
+    return (<div> 
+        Escribe algo y se verá debajo: <input type="text" onChange={this.changeHandler}/>
+        <p>{this.state.value}</p>
+      </div>);
+  }
+  changeHandler = (e) => {
+    
+    this.setState({value : e.target.value});
   }
 }
 

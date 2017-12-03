@@ -21,7 +21,7 @@ export class PropsPass extends React.Component {
   `;
 
   render() {
-    return null;
+    return <PassMeATitleProp title="Mi app mola poco"/>;
   }
 }
 

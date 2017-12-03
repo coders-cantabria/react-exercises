@@ -14,13 +14,17 @@ export class ParentPassingChildren extends React.Component {
   `;
 
   render() {
-    return null;
+    return <WrapsChildrenInAHeader children={['Hola','react','h1']}/>;
   }
 }
 
 export class WrapsChildrenInAHeader extends React.Component {
   render() {
-    return null;
+    return (<div>{
+      this.props.children.map((child) => {
+        return <h1>{child}</h1>;
+      })
+    }</div>);
   }
 }
 
