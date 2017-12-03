@@ -13,7 +13,7 @@ export class EventHandling extends React.Component {
   // handler = ???
 
   render() {
-    return (<button onClick={(e) => (console.log("Hola",e))}   >Boton</button>);
+    return (<button onClick={() => (console.log("click"))}>Boton</button>);
   }
 }
 
